@@ -3,7 +3,7 @@
 
 FROM library/ubuntu:12.04
 
-RUN apt-get -qq update && apt-get install -y curl wget subversion
+RUN apt-get -qq update && apt-get install -y curl wget pgp subversion
 
 RUN mkdir -p /usr/java
 
