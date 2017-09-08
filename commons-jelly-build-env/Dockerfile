@@ -14,4 +14,5 @@ ADD install.sh /tmp
 RUN chmod +x /tmp/install.sh && sh /tmp/install.sh
 
 ENV JAVA_HOME=/usr/java
-ENV PATH=${PATH}:${JAVA_HOME}/bin:/opt/ant/bin
+ENV PATH=${PATH}:${JAVA_HOME}/bin:/opt/ant/bin:/opt/maven/bin
+WORKDIR /root/commons-jelly-1.X

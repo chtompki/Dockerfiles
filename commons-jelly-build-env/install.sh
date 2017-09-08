@@ -7,8 +7,12 @@ chmod a+x jdk-1_5_0_22-linux-amd64.bin
 mv ./jdk1.5.0_22/* /usr/java
 
 mkdir -p /opt/ant
-curl http://archive.apache.org/dist/ant/binaries/apache-ant-1.6.0-bin.tar.gz -o /tmp/apache-ant-1.6.0-bin.tar.gz
-tar -xf apache-ant-1.6.0-bin.tar.gz -C /opt/ant --strip-components 1
+curl http://archive.apache.org/dist/ant/binaries/apache-ant-1.9.9-bin.tar.gz -o /tmp/apache-ant-1.9.9-bin.tar.gz
+tar -xf apache-ant-1.9.9-bin.tar.gz -C /opt/ant --strip-components 1
+
+mkdir -p /opt/maven
+curl https://archive.apache.org/dist/maven/binaries/apache-maven-3.0.5-bin.tar.gz -o /tmp/apache-maven-3.0.5-bin.tar.gz
+tar -xf apache-maven-3.0.5-bin.tar.gz -C /opt/maven --strip-components 1
 
 mkdir -p /root/commons-jelly-1.X
 
